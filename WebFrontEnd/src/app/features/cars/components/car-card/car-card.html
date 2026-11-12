@@ -1,0 +1,10 @@
+<div class="card h-100">
+<div class="card-body">
+    <h5 class="card-title">{{ car().make }} {{ car().model }}</h5>
+
+    @if(car().year){ <p class="card-text">Year: {{ car().year }}</p>}
+
+    <!-- <a [routerLink]="['/cars', car()._id]">View Profile</a> -->
+     <a matButton [routerLink]="['/cars', car()._id]">View Profile</a>
+</div>
+</div>
